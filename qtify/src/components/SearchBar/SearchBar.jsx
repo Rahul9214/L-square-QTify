@@ -1,20 +1,20 @@
 // import React from "react";
 import styles from "./SearchBar.module.css";
-// import SearchIcon from "../../assets/search-icon.svg";
+import searchicon from "../../assets/searchicon.svg";
 
-const SearchBar = ({ placeholder }) => {
+
+const SearchBar = () => {
     return (
-        <>
-            <div>
-                <input className={styles.search} placeholder={placeholder} />
-            </div>
-            <div>
-                <button className={styles.searchButton} type="submit" >
-                    {/* <SearchIcon /> */}
-                </button>
-            </div>
-        </>
-      
+        <form className={styles.wrapper}>
+          <div >
+              <input type="text" className={styles.search} placeholder="Search an album of your choice" />
+          </div>
+          <div>
+              <button className={styles.searchButton} type="submit" >
+                 <img src={searchicon} alt="search icon" />
+              </button>
+          </div>
+        </form>
     )
 }
 
