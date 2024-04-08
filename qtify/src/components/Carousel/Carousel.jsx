@@ -38,8 +38,10 @@ const Carousel = ({data,renderCardComponent}) => {
 }
 
 Carousel.propTypes = {
-    data: PropTypes.array.isRequired, // Specify that 'data' should be an array and is required
-    renderCardComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.string]).isRequired, // Adjust this based on your actual use case
+    data: PropTypes.array.isRequired, 
+    // Specify that 'data' should be an array and is required
+    renderCardComponent: PropTypes.oneOfType([PropTypes.func, PropTypes.string]).isRequired, 
+    // Adjust this based on your actual use case
   };
 
 export default Carousel;
